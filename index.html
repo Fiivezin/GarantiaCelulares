@@ -107,7 +107,7 @@ Ao adquirir este celular, o proprietário concorda em cumprir todas as cláusula
             document.getElementById('garantia_valor').innerHTML = parseFloat(document.getElementById('valor').value).toLocaleString('pt-br', {minimumFractionDigits: 2});
             document.getElementById('garantia_data').innerHTML = dataAtual();
             document.getElementById('garantia_vencimento').innerHTML = document.getElementById('vencimento').value;
-            window.print();
+            document.execCommand('print', false, null);
         }
         function dataAtual() {
             let data = new Date();
